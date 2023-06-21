@@ -1,0 +1,69 @@
+﻿<Window x:Class="Project18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project18"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="810">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DataGridView" Margin="0,0,0,25"
+                              IsSynchronizedWithCurrentItem="True"
+                              SelectionMode="Single"
+                              AutoGenerateColumns="False"
+                              ItemsSource= "{Binding}"
+                              IsReadOnly="False" 
+                              FontSize="16"
+                              Grid.Row="1" 
+                              Grid.RowSpan="16"
+                              Grid.Column="1">
+        <DataGrid.Columns>
+                <DataGridTextColumn x:Name="ClassName"
+                                    Binding="{Binding ClassName}"
+                                    Header="Класс животного"
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="TypeOfAnimal"
+                                    Binding="{Binding TypeOfAnimal}"
+                                    Header="Тип питания"/>
+                <DataGridTextColumn x:Name="Name"
+                                    Binding="{Binding Name}"
+                                    Header="Название"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AddButton" Content="Добавить животное" Click="AddButton_Click" Grid.Column="3" Grid.Row="1"/>
+        <Button x:Name="DeleteButton" Content="Удалить животное" Click="DeleteButton_Click" Grid.Column="3" Grid.Row="3"/>
+        <Button x:Name="SaveButtonDoc" Content="Сохранить коллекцию в Word" Grid.Column="3" Grid.Row="5"/>
+        <Button x:Name="SaveButtonTxt" Content="Сохранить коллекцию в txt" Grid.Column="3" Grid.Row="7"/>
+        <Button x:Name="SaveButtonJson" Content="Сохранить коллекцию в Json" Grid.Column="3" Grid.Row="9"/>
+        <Button x:Name="LoadButtonJson" Content="Загрузить коллекцию Json" Grid.Column="3" Grid.Row="13"/>
+        <TextBox x:Name="TextBoxJsonLoadText" TextWrapping="Wrap" Text="" Width="160" Grid.Column="3" Grid.Row="15"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+F:\C#\Project18\Project18Library\bin\Debug\Project18Library.dll
+F:\C#\Project18\Project18Library\bin\Debug\Project18Library.pdb
+F:\C#\Project18\Project18Library\obj\Debug\Project18Library.csproj.AssemblyReference.cache
+F:\C#\Project18\Project18Library\obj\Debug\Project18Library.csproj.CoreCompileInputs.cache
+F:\C#\Project18\Project18Library\obj\Debug\Project18Library.dll
+F:\C#\Project18\Project18Library\obj\Debug\Project18Library.pdb
+F:\C#\Project18\Project18Library\bin\Debug\Newtonsoft.Json.dll
+F:\C#\Project18\Project18Library\bin\Debug\Newtonsoft.Json.xml
+F:\C#\Project18\Project18Library\obj\Debug\Project18Library.csproj.CopyComplete
